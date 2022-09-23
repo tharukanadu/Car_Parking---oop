@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="D_background" prefHeight="639.0" prefWidth="1336.0" stylesheets="@../css/detailsBackground.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailsBoardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffee12" height="38.0" stroke="#ffee12" strokeType="INSIDE" width="1336.0" />
+      <Label layoutX="26.0" layoutY="11.0" text="Parling System" underline="true">
+         <font>
+            <Font name="Segoe UI Emoji" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="820.0" layoutY="79.0" prefHeight="38.0" prefWidth="164.0" text="Add Vehicle" />
+      <JFXButton buttonType="RAISED" layoutX="1074.0" layoutY="79.0" prefHeight="38.0" prefWidth="164.0" text="Add Driver" />
+      <JFXComboBox layoutX="75.0" layoutY="79.0" prefHeight="25.0" prefWidth="187.0" promptText="On Delivery" />
+      <TableView layoutX="37.0" layoutY="177.0" prefHeight="441.0" prefWidth="1272.0">
+        <columns>
+          <TableColumn prefWidth="322.99998474121094" text="Vehicle number" />
+          <TableColumn prefWidth="333.0" text="Vehicle Type" />
+            <TableColumn prefWidth="298.0" text="Driver Name" />
+            <TableColumn prefWidth="317.0" text="Left Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

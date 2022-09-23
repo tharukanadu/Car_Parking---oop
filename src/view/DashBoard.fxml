@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" prefHeight="639.0" prefWidth="1336.0" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffee12" height="38.0" opacity="0.41" stroke="WHITE" strokeType="INSIDE" width="1336.0" />
+      <Label cache="true" layoutX="14.0" layoutY="11.0" text="Parking System" underline="true">
+         <font>
+            <Font name="Segoe UI Emoji" size="15.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <Label layoutX="37.0" layoutY="87.0" text="Select Vehicle">
+         <font>
+            <Font name="Segoe UI Semibold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="159.0" layoutY="85.0" prefWidth="150.0" style="-fx-background-color: #FFFF00;" />
+      <Label layoutX="37.0" layoutY="148.0" text="Vehicle typw">
+         <font>
+            <Font name="Segoe UI Semibold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="221.0" text="Driver">
+         <font>
+            <Font name="Segoe UI Semibold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="159.0" layoutY="219.0" prefWidth="150.0" style="-fx-background-color: #FFFF00;" />
+      <JFXTextField layoutX="159.0" layoutY="146.0" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #F5F5DC;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebe5a4" height="193.0" layoutX="59.0" layoutY="378.0" stroke="WHITE" strokeType="INSIDE" width="352.0" />
+      <Label layoutX="93.0" layoutY="390.0" text="Your Parking Sort Number" underline="true">
+         <font>
+            <Font name="Segoe MDL2 Assets" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="448.0" prefHeight="73.0" prefWidth="128.0" text="1">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#88898a" height="120.0" layoutX="731.0" layoutY="98.0" opacity="0.37" stroke="#a19595" strokeType="INSIDE" width="470.0" />
+      <Label layoutX="774.0" layoutY="110.0" text="Date" textFill="#fffafa">
+         <font>
+            <Font name="Poor Richard" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1030.0" layoutY="133.0" text="Time" textFill="#fffafa">
+         <font>
+            <Font name="Nirmala UI Semilight" size="46.0" />
+         </font>
+      </Label>
+      <JFXButton id="button" buttonType="RAISED" layoutX="836.0" layoutY="475.0" onAction="#managerLoginBtn" prefHeight="47.0" prefWidth="301.0" stylesheets="@../css/button1.css" text="Management Login">
+         <font>
+            <Font name="Marlett" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

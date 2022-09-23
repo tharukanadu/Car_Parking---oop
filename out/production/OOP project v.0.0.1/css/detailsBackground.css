@@ -1,0 +1,7 @@
+#D_background{
+    -fx-background-color:
+            #007FFF,
+            #FFFF00,
+            linear-gradient(#89CFF0, #00FF7F),
+            linear-gradient(#F7E7CE, #00FF7F);
+}
