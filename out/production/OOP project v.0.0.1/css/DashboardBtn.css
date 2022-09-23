@@ -1,8 +1,8 @@
-#addButton{
+#Dash_Btn{
     -fx-background-color:
-            #3c7fb1,
+            #D70040,
             linear-gradient(#fafdfe, #e8f5fc),
-            linear-gradient(#7FFF00 0%, #00FF3F 49%, #00FF7F 50%, #7FFF00 100%);
+            linear-gradient(	#D70040 0%,	#FD3F92 49%, #DE5285 50%, #FF5470 100%);
     -fx-background-insets: 0,1,2;
     -fx-background-radius: 3,2,1;
     -fx-padding: 3 30 3 30;
