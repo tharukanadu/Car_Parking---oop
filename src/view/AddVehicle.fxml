@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="Ve_De_background" prefHeight="639.0" prefWidth="1336.0" stylesheets="@../css/Ve_Dr_Background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffee12" height="38.0" stroke="#ffee12" strokeType="INSIDE" width="1336.0" />
+      <Label layoutX="14.0" layoutY="11.0" text="Add Vehicle" underline="true">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="259.0" layoutY="116.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField layoutX="259.0" layoutY="204.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField layoutX="259.0" layoutY="296.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="63.0" layoutY="120.0" text="Vehicle Number">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="208.0" text="Maximum Weight">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="300.0" text="No of passengers">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="756.0" layoutY="120.0" text="Vehicle Type">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton id="addButton" layoutX="931.0" layoutY="472.0" prefHeight="44.0" prefWidth="169.0" stylesheets="@../css/AddBtn.css" text="Add Vehicle">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox layoutX="941.0" layoutY="116.0" prefHeight="25.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>
