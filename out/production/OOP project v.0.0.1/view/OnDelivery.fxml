@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="On_D_background" prefHeight="639.0" prefWidth="1336.0" stylesheets="@../css/OnDelivery.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDeliveryController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2e1ff" height="103.0" layoutX="5.0" layoutY="1.0" stroke="#f2e1ff" strokeType="INSIDE" width="1350.0" />
+      <Label layoutX="38.0" layoutY="35.0" text="ON DELIVERY" underline="true">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblDielivery" layoutX="38.0" layoutY="129.0" prefHeight="479.0" prefWidth="1263.0">
+        <columns>
+          <TableColumn fx:id="colVehicle" prefWidth="205.00003051757812" text="Vehicle No" />
+          <TableColumn fx:id="colVehicleType" prefWidth="321.9999694824219" text="Vehicle type" />
+            <TableColumn fx:id="colDriver" prefWidth="206.0" text="Driver" />
+            <TableColumn fx:id="colTime" prefWidth="258.0" text="Time" />
+            <TableColumn fx:id="colDate" prefWidth="271.0" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

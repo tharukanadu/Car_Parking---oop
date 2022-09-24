@@ -24,10 +24,15 @@ public class LoginFormController {
         String Name = textUserName.getText();
         String password = textPassword.getText();
         if (Name.equals("car") && password.equals("123")) {
-            URL resource = getClass().getResource("../src/view/DashBoard.fxml");
-            Parent load = FXMLLoader.load(resource);
-            Stage window = (Stage) loginAnchor.getScene().getWindow();
-            window.setScene(new Scene(load));
+//            URL resource = getClass().getResource("../src/view/Form.fxml");
+//            Parent load = FXMLLoader.load(resource);
+//            Stage window = (Stage) loginAnchor.getScene().getWindow();
+//            window.setScene(new Scene(load));
+            Parent load = FXMLLoader.load(getClass().getResource("../view/Form.fxml"));
+            Scene scene = new Scene(load);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
         } else {
 
 
@@ -36,4 +41,3 @@ public class LoginFormController {
     }
 
 }
-

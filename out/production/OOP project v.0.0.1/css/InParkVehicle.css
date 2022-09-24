@@ -1,0 +1,7 @@
+#park_background{
+    -fx-background-color:
+            #007FFF,
+            #FFFF00,
+            linear-gradient(#F19CBB	,#9932CC),
+            linear-gradient(#F7E7CE, #DE6FA1);
+}

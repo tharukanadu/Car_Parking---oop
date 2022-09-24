@@ -4,14 +4,15 @@ public class Vehicle {
     private String VehicleNumber;
     private String Maximum_Weight;
     private String NoOfPassengers;
-
+    private String VehicleType;
     public Vehicle() {
     }
 
-    public Vehicle(String vehicleNumber, String maximum_Weight, String noOfPassengers) {
+    public Vehicle(String vehicleNumber, String maximum_Weight, String noOfPassengers, String vehicleType) {
         VehicleNumber = vehicleNumber;
         Maximum_Weight = maximum_Weight;
         NoOfPassengers = noOfPassengers;
+        VehicleType = vehicleType;
     }
 
     public String getVehicleNumber() {
@@ -38,12 +39,21 @@ public class Vehicle {
         NoOfPassengers = noOfPassengers;
     }
 
+    public String getVehicleType() {
+        return VehicleType;
+    }
+
+    public void setVehicleType(String vehicleType) {
+        VehicleType = vehicleType;
+    }
+
     @Override
     public String toString() {
         return "Vehicle{" +
                 "VehicleNumber='" + VehicleNumber + '\'' +
                 ", Maximum_Weight='" + Maximum_Weight + '\'' +
                 ", NoOfPassengers='" + NoOfPassengers + '\'' +
+                ", VehicleType='" + VehicleType + '\'' +
                 '}';
     }
 }
