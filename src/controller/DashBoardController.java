@@ -156,6 +156,6 @@ public class DashBoardController {
         String time = lblTime.getText();
         String date = lblDate.getText();
 
-  //      OnDelivaryDetailFormController.Delivary(number, type, driver, time, date);
+       OnDeliveryController.Delivery(number, type, driver, time, date);
     }
 }

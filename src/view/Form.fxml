@@ -50,7 +50,7 @@
             <Image url="@../assets/add2.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="47.0" fitWidth="49.0" layoutX="254.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="47.0" fitWidth="49.0" layoutX="242.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/park.png" />
          </image>

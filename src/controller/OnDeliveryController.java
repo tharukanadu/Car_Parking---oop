@@ -29,11 +29,9 @@ public class OnDeliveryController {
 
         tblDielivery.setItems(deliveryList);
     }
-//    public void loadAllVehicle(){
-//        ObservableList<OnDeliveryTm>delivery=FXCollections.observableArrayList();
-//        delivery.add(new VehicleTm(textVehicleNumber.getText(),textMaximumWeight.getText(),textNoOfPassenger.getText(),textVehicleTypeone.getText()));
-//
-//        tblDielivery.setItems(delivery);
-//    }
+    public static void Delivery(String VehicleNumber, String VehicleType, String Driver, String Time, String Date) {
+        OnDeliveryTm delivery = new OnDeliveryTm(VehicleNumber, VehicleType, Driver, Time, Date);
+        deliveryList.add(delivery);
 
+    }
 }

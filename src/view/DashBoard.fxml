@@ -46,7 +46,7 @@
             <Font name="Segoe MDL2 Assets" size="23.0" />
          </font>
       </Label>
-      <Label fx:id="lblslot" layoutX="161.0" layoutY="448.0" prefHeight="73.0" prefWidth="128.0" text="1">
+      <Label fx:id="lblslot" layoutX="161.0" layoutY="448.0" prefHeight="73.0" prefWidth="128.0" text="0">
          <font>
             <Font size="60.0" />
          </font>
