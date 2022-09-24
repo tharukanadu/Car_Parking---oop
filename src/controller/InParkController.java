@@ -25,6 +25,7 @@ public class InParkController {
 
         tblInPark.setItems(parkList);
     }
+
     public static void Parking(String VehicleNumber, String VehicleType, String SloatNumber, String Time, String Date) {
         InParkTm inpark = new InParkTm(VehicleNumber, VehicleType, SloatNumber, Time, Date);
         parkList.add(inpark);

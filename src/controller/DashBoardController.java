@@ -119,34 +119,34 @@ public class DashBoardController {
             int result = r.nextInt(end - start) + start;
             lblslot.setText(String.valueOf(result));
         }
+            if (textVehicleType.getText().equals("Bus")) {
+                Random r = new Random();
+                int start = 14;
+                int end = 15;
+                int result = r.nextInt(end - start) + start;
+                lblslot.setText(String.valueOf(result));
+            }
 
-        //Bus Random Number
-        if (textVehicleType.getText().equals("Bus")) {
-            Random r = new Random();
-            int start = 14;
-            int end = 15;
-            int result = r.nextInt(end - start) + start;
-            lblslot.setText(String.valueOf(result));
+            //Cargo lory Random Number
+            if (textVehicleType.getText().equals("Cargo Lory")) {
+                Random r = new Random();
+                int start = 5;
+                int end = 12;
+                int result = r.nextInt(end - start) + start;
+                lblslot.setText(String.valueOf(result));
+
+            }
+
+
+            String vehicle =  SelectVehicleCombo.getSelectionModel().getSelectedItem().toString();
+                   String type = textVehicleType.getText();
+                    String sort = lblslot.getText();
+                    String date = lblDate.getText();
+                    String time = lblTime.getText();
+
+            InParkController.Parking(vehicle,type,sort,date,time);
         }
 
-        //Cargo lory Random Number
-        if (textVehicleType.getText().equals("Cargo Lory")) {
-            Random r = new Random();
-            int start = 5;
-            int end = 12;
-            int result = r.nextInt(end - start) + start;
-            lblslot.setText(String.valueOf(result));
-
-        }
-
-        String number = SelectVehicleCombo.getSelectionModel().getSelectedItem().toString();
-        String type = textVehicleType.getText();
- //       String sloat = txtSlot.getText();
-        String time = lblTime.getText();
-        String date = lblDate.getText();
-
-    //    InParkDetailFormController.Parking(number, type, sloat, time, date);
-    }
 
 
     public void OnDeliveryBtn(ActionEvent actionEvent) {

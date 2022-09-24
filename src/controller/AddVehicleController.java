@@ -27,6 +27,8 @@ public class AddVehicleController {
     public TableColumn colVehicleType;
 
     static ObservableList<VehicleTm> vehicleList = FXCollections.observableArrayList();
+    public TextField textVehicleType;
+    public TextField textVehicleTypeone;
 
     public void initialize(){
         tblVehicle.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("Vehicle_number"));
@@ -37,19 +39,22 @@ public class AddVehicleController {
         tblVehicle.setItems(vehicleList);
     }
     public void AddVehicleButton(ActionEvent actionEvent) {
-        Vehicle vehicle = new Vehicle(textVehicleNumber.getText(),textMaximumWeight.getText(),textNoOfPassenger.getText(),vehicleTypeCombo.getValue());
+        Vehicle vehicle = new Vehicle(textVehicleNumber.getText(),textMaximumWeight.getText(),textNoOfPassenger.getText(),textVehicleTypeone.getText());
 
 
         if (vehiclelist.add(vehicle)) {
             new Alert(Alert.AlertType.CONFIRMATION, "Save..", ButtonType.CLOSE).show();
+            loadAllVehicle();
         } else {
             new Alert(Alert.AlertType.WARNING, "Try Again..", ButtonType.CLOSE).show();
         }
     }
+    public void loadAllVehicle(){
+        ObservableList<VehicleTm>vehicle=FXCollections.observableArrayList();
+        vehicle.add(new VehicleTm(textVehicleNumber.getText(),textMaximumWeight.getText(),textNoOfPassenger.getText(),textVehicleTypeone.getText()));
 
-public static void VehicleAdd(String Vehicle_number, String Maximum_Weight, String No_of_passengers, String Vehicle_Type) {
-    VehicleTm vehicle  = new VehicleTm(Vehicle_number, Maximum_Weight, No_of_passengers, Vehicle_Type);
-    vehicleList.add(vehicle);
+        tblVehicle.setItems(vehicle);
+    }
 
-}
+
 }

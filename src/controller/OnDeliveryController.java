@@ -8,6 +8,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import view.Tm.DriverTm;
 import view.Tm.InParkTm;
 import view.Tm.OnDeliveryTm;
+import view.Tm.VehicleTm;
 
 public class OnDeliveryController {
 
@@ -28,10 +29,11 @@ public class OnDeliveryController {
 
         tblDielivery.setItems(deliveryList);
     }
-    public static void Parking(String VehicleNumber, String VehicleType, String Driver, String Time, String Date) {
-        OnDeliveryTm delivery = new OnDeliveryTm(VehicleNumber, VehicleType, Driver, Time, Date);
-        deliveryList.add(delivery);
-
-    }
+//    public void loadAllVehicle(){
+//        ObservableList<OnDeliveryTm>delivery=FXCollections.observableArrayList();
+//        delivery.add(new VehicleTm(textVehicleNumber.getText(),textMaximumWeight.getText(),textNoOfPassenger.getText(),textVehicleTypeone.getText()));
+//
+//        tblDielivery.setItems(delivery);
+//    }
 
 }
